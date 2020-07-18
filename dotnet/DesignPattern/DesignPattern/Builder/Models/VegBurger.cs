@@ -5,11 +5,11 @@ using DesignPattern.Builder.Items;
 
 namespace DesignPattern.Builder.Models
 {
-    public class VegBurger : ColdDrink
+    public class VegBurger : Burger
     {
         public override string name()
         {
-            return "Beg burger";
+            return "Veg burger";
         }
 
         public override float price()

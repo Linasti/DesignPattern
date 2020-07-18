@@ -12,7 +12,7 @@ namespace DesignPattern.Builder.Items
 
         public Packing packing()
         {
-            return new Bottle();
+            return new Wrapper();
         }
 
         public abstract float price();

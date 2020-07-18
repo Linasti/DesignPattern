@@ -5,7 +5,7 @@ using DesignPattern.Builder.Items;
 
 namespace DesignPattern.Builder.Models
 {
-    public class Coke : Burger
+    public class Coke : ColdDrink
     {
         public override string name()
         {

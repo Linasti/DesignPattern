@@ -32,9 +32,9 @@ namespace DesignPattern.Builder
 
             foreach (Item item in items)
             {
-                result.AppendLine($"Item : {item.name()} , Packing : {item.packing()} , Price {item.price()}");
+                result.AppendLine($"Item : {item.name()} , Packing : {item.packing().pack()} , Price {item.price()}");
             }
-
+            result.AppendLine($"Total : {GetCost()}");
             return result.ToString();
         }
 

@@ -19,11 +19,11 @@ namespace DesignPattern.Test.Builder
 
           Meal vegMeal = mealBuilder.PrepareVegMeal();
           string vegSummuary = vegMeal.GetMenuSummary();
-          Assert.AreEqual("Item : Beg burger , Packing : DesignPattern.Builder.Packings.Bottle , Price 25\r\nItem : Coke , Packing : DesignPattern.Builder.Packings.Bottle , Price 30\r\n",vegSummuary);
+          Assert.AreEqual("Item : Veg burger , Packing : Wrapper , Price 25\r\nItem : Coke , Packing : Bottle , Price 30\r\nTotal : 54\r\n",vegSummuary);
           
           Meal nonVegMeal = mealBuilder.PrepareNonVegMeal();
           string nonVezgSummary = nonVegMeal.GetMenuSummary();
-          Assert.AreEqual("Item : chicken burger , Packing : DesignPattern.Builder.Packings.Bottle , Price 50.5\r\nItem : Persi , Packing : DesignPattern.Builder.Packings.Bottle , Price 35\r\n", nonVezgSummary);
+          Assert.AreEqual("Item : chicken burger , Packing : Wrapper , Price 50.5\r\nItem : Persi , Packing : Bottle , Price 35\r\nTotal : 84.5\r\n", nonVezgSummary);
 
         }
     }
