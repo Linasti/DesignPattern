@@ -8,8 +8,4 @@
     <None Remove="AbstractFactory\Interfaces\NewFile1.txt" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="AbstractFactory\Models\" />
-  </ItemGroup>
-
 </Project>

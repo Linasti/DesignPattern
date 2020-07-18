@@ -16,8 +16,4 @@
     <ProjectReference Include="..\DesignPattern\DesignPattern.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="AbstractFactory\" />
-  </ItemGroup>
-
 </Project>

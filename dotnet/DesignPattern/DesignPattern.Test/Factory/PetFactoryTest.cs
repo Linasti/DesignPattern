@@ -1,22 +1,19 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-
-using DesignPattern.Factory;
+using System.Threading.Tasks;
 using DesignPattern.Factory.Interfaces;
 using DesignPattern.Factory.Models;
-
-using NUnit.Framework;
+using DesignPattern.Factory;
 
 namespace DesignPattern.Test.Factory
 {
-    class PetFactoryTest
+    [TestFixture]
+    public class PetFactoryTest
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [TestCase(EPetType.Cat, typeof(Cat), 20, "Mouse")]
         [TestCase(EPetType.Dog, typeof(Dog), 10, "Bones")]
         [TestCase(EPetType.Horse, typeof(Horse), 15, "Grass")]
