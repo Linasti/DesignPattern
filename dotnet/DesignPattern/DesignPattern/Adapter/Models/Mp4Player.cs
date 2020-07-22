@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using DesignPattern.Adapter.Interfaces;
+﻿using DesignPattern.Adapter.Interfaces;
 
-namespace DesignPattern.Adapter.Modules
+namespace DesignPattern.Adapter.Models
 {
     public class Mp4Player : AdvancedMediaPlayer
     {

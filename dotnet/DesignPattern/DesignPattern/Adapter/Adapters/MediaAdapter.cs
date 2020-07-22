@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using DesignPattern.Adapter.Interfaces;
+using DesignPattern.Adapter.Models;
 using DesignPattern.Adapter.Modules;
 
 namespace DesignPattern.Adapter.Adapters
