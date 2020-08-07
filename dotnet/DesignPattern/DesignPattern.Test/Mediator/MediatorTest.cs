@@ -17,11 +17,11 @@ namespace DesignPattern.Test.Mediator
         {
             User robert = new User("Robert");
             string messageSend = robert.SendMessage("Hi! John!");
-            Assert.AreEqual("",messageSend);
+            Assert.IsTrue(messageSend.Contains("[Robert] : Hi! John!"));
 
             User john = new User("John");
             messageSend = john.SendMessage("Hello! Robert!");
-            Assert.AreEqual("",messageSend);
+            Assert.IsTrue(messageSend.Contains("[John] : Hello! Robert!"));
         }
     }
 }
