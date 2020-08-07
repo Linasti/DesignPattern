@@ -23,6 +23,7 @@ namespace DesignPattern.Test.Memento
             careTaker.Add(originator.SaveStateToMemento());
       
             originator.SetState("State #3");
+            
             careTaker.Add(originator.SaveStateToMemento());
             originator.SetState("State #4");
 
